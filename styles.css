@@ -1,0 +1,13 @@
+:root {
+    --primary: #d81e5b;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    text-transform: capitalize;
+}
