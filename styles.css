@@ -1,13 +1,106 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
+
 :root {
     --primary: #d81e5b;
+    --secondary: #8a4fff;
+    --gray: #aaa;
+    --light: #eee;
+    --dark: #131a26;
 }
-
 
 
 * {
+    margin: 0;
     box-sizing: border-box;
+
+    font-family: 'Fira sans', sans-serif;
 }
 
 .body {
+    background: var(--light);
+}
+
+.main {
+
+    padding: 3rem 2rem;
+    max-width: 640px;
+    margin: 0 auto;
+
+}
+
+h1 {
+    color: var(--dark);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.container {
+    background: var(--dark);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--light);
+}
+
+.counter-value {
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.counter-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -0.5rem;
+}
+
+.counter-controls button {
     text-transform: capitalize;
+    margin: 0 0.5rem;
+}
+
+button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+
+button span {
+    display: block;
+    transition: 0.4s ease-out;
+}
+
+button[data-action="reset"] {
+    color: #fff;
+    opacity: 0.5;
+}
+
+button[data-action="reset"]:hover {
+    opacity: 1;
+}
+
+.save-clear {
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save-clear button {
+    color: var(--dark);
+    text-transform: capitalize;
+}
+
+button:active {
+    transform: scale(1.1);
 }
